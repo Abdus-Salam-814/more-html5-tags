@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More html 5 tags</title>
+    <style>
+        .detailt-tag-container{
+            border: 3px double gray  ;
+            border-radius: 15px;
+            box-shadow: 10px 10px 30px greenyellow;
+            padding: 20px;
+            margin: 60px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="detailt-tag-container">
+        <h1>This is A datalist Tag</h1>
+    <details name="life" open>
+        <summary>My Life History</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, itaque.</p>
+    </details>
+    <details name="life">
+        <summary>My Life History</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, itaque.</p>
+    </details>
+    <details name="life">
+        <summary>My Life History</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, itaque.</p>
+    </details>
+    <details name="life">
+        <summary>My Life History</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, itaque.</p>
+    </details>
+    <details name="life">
+        <summary>My Life History</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, itaque.</p>
+    </details>
+    
+    </div>
+
+    <div class="data-list">
+        <h1>Data list Input</h1>
+        <input type="text" list="data-list">
+        <datalist id="data-list" >
+            <option value="Abdus Salam"></option>
+            <option value="Abdus Subhan"></option>
+            <option value="Abdus Sukur"></option>
+        </datalist>
+    </div>
+    <h1>New Input Type:</h1>
+    <ul>
+        <style>
+            input, li{
+                margin: 15px;
+                text-align: center;
+                list-style: none;
+
+            }
+        </style>
+        <li>Range: <input type="range"></li>
+        <li>Number: <input type="number"></li>
+        <li>Month: <input type="month"></li>
+        <li>Email: <input type="email"></li>
+        <li>Date: <input type="date"></li>
+        <li>date Time Local: <input type="datetime-local"></li>
+    </ul>
+
+
+
+
+
+
+
+    <script>
+        fetch('https://jsonplaceholder.typicode.com/albums')
+        .then(res => res.json())
+        .then(data => {
+            data.map(data =>{})
+            
+        })
+    </script>
+
+
+</body>
+</html>
